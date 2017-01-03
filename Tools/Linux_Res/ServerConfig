@@ -1,0 +1,19 @@
+				服务器配置
+开发环境：Centos,Windows
+C++工具：gcc,gdb,vim
+数据库：MariaDB mariadb
+数据库API：MariaDB Connector/C
+网络数据交换协议：protobuf(protobuf,protoc):2.6.1
+线程：(pthread)
+AES加密：openssl crypto
+XMl：libxml2
+
+
+服务器注意事项：
+1：开机启动mysql，openssl,NetManager
+2: 把服务器IP地址改为静态IP地址
+3：vim  配置vim
+4: firewalld配置
+Window开发工具：
+WinScp
+

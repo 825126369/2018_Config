@@ -1,0 +1,10 @@
+x11vnc 配置：
+密码：123456
+端口：7000
+子启动脚本放在：/etc/rc.local
+
+
+子启动内容：
+sudo /usr/bin/x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg     -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -rfbport 7000
+
+

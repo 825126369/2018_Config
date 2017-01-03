@@ -1,0 +1,20 @@
+C++用于管理时间头文件:ctime 和 chrono
+ctime用法：
+（1）time_t t=0;
+	cout<<t<<endl;
+	//获取当前日期和时间的整形数
+	//t=time(&t);
+	cout<<t<<endl;
+	//把整形时间，转换为字符串
+	char* aaa= ctime(&t);
+	cout<<aaa<<endl;
+(2)
+	#include <time.h>  
+   	 time_t now;  
+   	 now = time(NULL);//获取当前时间  
+      
+   	 struct tm *timeinfo;  
+   	 timeinfo = localtime(&now);//转换为tm  
+      
+   	 time_t seconds;  
+	 seconds = mktime(timeinfo);//转换为time_t  

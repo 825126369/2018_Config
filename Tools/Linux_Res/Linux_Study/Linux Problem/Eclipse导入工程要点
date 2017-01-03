@@ -1,0 +1,5 @@
+导入Eclipse C++工程到Eclipse中，遇到了一个问题：原先的所有配置（引入外部的动态库路径了，包含头文件的路径了，等等），全部丢失了。
+花费多长时间解决了这个问题：6个小时或许更多
+解决办法：原来是自己导入C++工程的方法有问题，不应该用Existing Code as Makefile Project这个C/C++选项里的这个选项，而应该是General里的Existing Project into Workspace。
+
+此方法可保证工程配置不会丢失，切记！

@@ -1,0 +1,6 @@
+//查看共享库配置的目录
+# cat /etc/ld.so.conf
+//如果输出目录没有你需要的共享库所在的目录，则添加
+# echo "/usr/local/lib" >> /etc/ld.so.conf
+//刷新共享库配置
+# ldconfig

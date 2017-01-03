@@ -1,0 +1,6 @@
+#! /bin/sh
+#测试sed用法
+
+aaa="bbb"
+echo $aaa|sed 's/bbb/nimabi/g'
+echo aaa

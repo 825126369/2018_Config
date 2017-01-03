@@ -1,0 +1,10 @@
+关于Linux系统调用接口（非C++标准库）
+fcntl.h
+unistd.h 
+sys/socket.h	//socket库
+netinet/in.h
+arpa/inet.h	//IP地址转换库
+pthread.h//线程库
+sys/wait.h
+sys/sem.h
+sys/stat.h

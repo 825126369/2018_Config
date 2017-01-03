@@ -1,0 +1,6 @@
+1： 杀死关键字所有进程 ps -ef|grep 关键字|grep -v grep|cut -c 9-15|xargs kill -9
+ps -ef|grep C++_Server_EclipseProject|grep -v grep|cut -c 9-15|xargs kill -9
+2：刷新共享库：ldconfig
+3:查看网卡：lspci ，lspci | grep Ethernet
+
+

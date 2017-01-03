@@ -1,0 +1,5 @@
+Eclipse 在正常操作下，突然无法响应 ，用kill命令杀死Eclipse进程后，无论重启机器还是重启Eclipse，Eclipse都会在执行一会后，卡死，以及一些配置信息无法显示。
+尝试解决的方法：
+（1）删除默认工作区，无效
+（2）删除Eclipse重新安装Mar版本Eclipse 无效
+（3）重新删除Eclipse，安装neon版本的Eclipse后，解决所有问题
