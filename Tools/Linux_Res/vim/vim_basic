@@ -1,0 +1,3 @@
+设置插件的安装目录（在vimconf文件中写）
+set runtimepath=c:/users/xxxx/.vim
+Linux默认是：~/.vim，Windows默认是：vimfiles中
