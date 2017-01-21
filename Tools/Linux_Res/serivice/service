@@ -1,0 +1,22 @@
+service config:
+
+Check Service Status:
+systemctl status "servicename"
+
+List All Service:
+systemctl list-unit-files --type=service
+
+basic operate:
+systemctl start httpd.service
+systemctl restart httpd.service
+systemctl stop httpd.service
+systemctl kill httpd.service
+systemctl reload httpd.service
+systemctl status httpd.service
+
+system start load:
+# systemctl is-active httpd.service
+# systemctl enable httpd.service
+# systemctl disable httpd.service
+ok
+

@@ -1,0 +1,30 @@
+start mariadb server:
+service mariadb start
+
+start mariadb:
+mysql -u root -p'*'
+
+database command:
+create database "dbname";
+show database
+drop database "dbname";
+
+table engines command:
+show engines;
+
+show table struct command:
+describe "tablename";
+show create table "tablename";
+
+table command:
+show tables;
+drop table "tablename";
+
+create table "tablename"
+(
+	
+
+
+)
+
+insert into "tablename" set "filldName"="value";

@@ -1,0 +1,90 @@
+import "proto_struct.proto";
+
+//1100 C->S ChatInfo
+message csChatData
+{
+	optional uint32 channelId=1;
+	optional string talkMsg =2;	
+	optional uint64 otherId =3;			
+}
+//1100 S->C 
+message scChatData
+{
+	optional uint32 result				= 1;		
+	optional struct_ChatInfo  chatInfo  = 2;
+}
+//1101 C->S RegisterAccount
+message csRegisterAccount
+{
+	optional string accountName  		=1;
+	optional string password     		=2;
+	optional string repeatPassword 		=3;
+}
+//1101 S->C
+message scRegisterAccount
+{
+	optional uint32 result  	=1;	
+}
+//1102 C->S
+message csLoginGame
+{
+	optional string accountName 	=1;
+	optional string password 		=2;
+}
+//1102,5002,S->C
+message scLoginGame
+{
+	optional uint32 result    =1;
+	optional uint32 lastSelecServerId =2;
+	repeated uint32 serverList =3; //record have role server list
+}
+//1103,C->S
+message csSelectServer
+{
+	optional uint32 id  	=1;
+}
+//1103,S->C
+message scSelectServer
+{
+	optional uint32 result 	=1;
+	optional uint64 LastSelectRoleId =2;
+	repeated struct_PlayerDetailInfo roleList =3;
+}
+//1104,C->S 
+message csCreateRole
+{
+	optional string name 		=1;
+	optional uint32 sex 		=2;
+	optional uint32 profession 	=3; 		
+}
+//1104,5002,S->C
+message scCreateRole
+{
+	optional uint32 result  =1;
+	optional struct_PlayerDetailInfo role =2; 
+}
+//1105,C->S
+message csSelectRole
+{
+	optional uint64 roleId 	=1;
+}
+//1105,S->C
+message scSelectRole
+{
+	optional uint32 result 	=1;	
+}
+
+message csEnterMap
+{
+	optional uint32 configId =1;
+} 
+
+message scEnterMap
+{
+	optional uint32 result 	=1;
+}
+
+
+
+
+

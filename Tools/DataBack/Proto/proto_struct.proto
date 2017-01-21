@@ -1,0 +1,53 @@
+message struct_serverInfo
+{
+	optional uint32 serverId 	=1; //configId==serverId
+	optional string ip 			=2;
+	optional uint32 port 		=3;
+	repeated uint64 roleId 		=4;
+	uint64 lastLoginRoleId 		=5;	
+}
+
+message struct_ItemInfo
+{
+	optional uint64 id 			=1;
+	optional uint32 pos 		=2;
+	optional uint32 configId 	=3;
+	optional uint32 cout 		=4;
+}
+
+message struct_PlayerSimpleInfo
+{
+	optional uint64 id 			 =1;
+	optional string name  		 =2;
+	optional uint32 level   	 =3; 
+}
+
+message struct_PlayerDetailInfo
+{
+	optional uint64 id  		=1;
+	optional string name  		=2;
+	optional uint32 level 		=3;
+	optional uint64 modelId 	=4;
+	repeated struct_ItemInfo equipList 	=5;//role
+}
+
+message struct_PlayerBagInfo
+{
+	optional uint32 maxCout 	=1;
+	repeated struct_ItemInfo  itemList	=2;	
+}
+
+message struct_LOL_HeroDetailInfo
+{
+	optional uint64 id 		=1;
+	optional uint32 configId 	=2;
+}
+
+message struct_ChatInfo
+{
+	optional uint32 channelId 					= 1;
+	optional struct_PlayerSimpleInfo Sender		= 2;	
+	optional struct_PlayerSimpleInfo Receiver 	= 3;
+	optional string TalkMsg						= 4;		
+	optional uint64 time						= 5;	
+}

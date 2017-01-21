@@ -1,0 +1,10 @@
+time config:
+
+1: download:yum install chrony
+2:start timesync service:systemctl start chronyd.service
+
+3:check time:timedatectl --show
+
+
+ok
+
