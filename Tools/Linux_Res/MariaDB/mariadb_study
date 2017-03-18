@@ -1,0 +1,30 @@
+1: 登录数据库
+mysql -u root -p'密码'
+
+2：显示数据库：show databases;
+删除数据库库：drop database dbName;
+创建数据库：create database dbName;
+使用数据库：use dbName;
+
+4: 显示所有表：show tables;
+查看表：desc tbName;
+删除表：drop table tbName;
+创建表：create table tbName(字段名，类型，属性...,...);
+
+
+5：外键，索引（包括主键）
+外键： constraint '外键别名' foreign key('字段名'，..) references '父表名'(‘字段名’,...)
+index/key '别名'('字段1',...)
+
+6：视图：
+创建： create '算法' view '视图别名'(‘字段1别名’,...) as ‘slect语句’
+查看：desc viewName;
+删除：drop view viewName;
+
+7:触发器：
+触发事件：delete,insert,update
+创建: create trigger '触发器名' before|after '触发事件' on '表名' for each row '命令'
+显示触发器：show triggers;
+删除：drop trigger '触发器名’
+
+

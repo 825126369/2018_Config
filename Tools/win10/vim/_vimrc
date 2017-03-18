@@ -47,9 +47,11 @@ set fileencodings=utf-8
 set fileencoding=utf-8
 set showtabline=2
 
-set tags+=C:\Users\xuke\Downloads\stl\tags
-set tags+=F:\2018_Server\ThridProject\libev\src\tags
-set tags+=F:\2018_Server\Project\Server\src\tags
+"set tags+=F:\2018_Server\tags
+set tags+=F:\2018_Server\OpenSourceEngine\skynet\tags
+
+cs a F:\2018_Server\OpenSourceEngine\skynet\cscope.out
+set cscopequickfix=s-,g-,c-,t-,e-,f-,i-,d-
 
 filetype plugin indent on
 let OmniCpp_NamespaceSearch = 1
@@ -64,3 +66,5 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif 
 set completeopt=menuone,menu,longest
 
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"

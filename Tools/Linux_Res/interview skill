@@ -1,0 +1,47 @@
+				         interview skill
+standard template library：
+C：
+stdio.h,assert.h,ctype.h,errno.h,limits.h,string.h,stdlib.h,time.h,math.h,fenv.h,float.h,inttype.h,iso646.h,locale.h,setjmp.h,signal.h,stdbool.h,stddef.h,stdint.h,tgmath.h,uchar.h,wchar.h,wctype.h
+
+C++：
+iostream,string,vector,map,sstream
+
+integer must remeber：
+
+short: at least 16 bit。
+int: at least as long as short。
+long: at least 32 bit，and at least as long as int。
+long long: at least 64 bits，and at least as long as long
+
+Big endian,Little endian:
+
+C/C++ Input or output function:
+printf,sprintf,scanf,putchar,getchar,gets,puts,cout,cin
+
+val array,flexible array member:
+
+stdarg,__VA_ARGS__:
+
+Sort algorithm:
+insertion sort, shell sort,slection sort,heap sort,bubble sort,quick sort
+
+C storage declarator:
+auto register static extern
+
+C storage type specifier:
+external links,internal links,null link,register,auto
+
+C++ Iterator type:
+InputIterator,OutputIterator,
+
+C++ Type Cast:
+dynamic_cast,const_cast,static_cast,reinterpret_cast
+Conversion Function
+Constructor
+
+
+
+
+
+
+
